@@ -4,8 +4,8 @@
     --fundo-card: #ffffff;
     --texto: #222222 ;
     --text-inverso: #ffffff;
-    --destaque: #011826;
-    --destaque-inverso: #70818C;
+    --destaque: #400101;
+    --destaque-inverso: #ffffff;
 }
 * {
     margin: 0px;
@@ -32,14 +32,21 @@ header > #menu {
 }
 header > #menu > a {   
     text-decoration: none;
-    margin: 3px;
-    padding: 10px;
-    color: var(--destaque-inverso);
+    margin: 7px;
+    padding: 8px;
+    color: white;
     border-radius: 10px;
 }
 header > #menu > a:hover {
     background-color: var(--destaque-inverso);
     color: var(--destaque);
     transition: background-color 0.5s,color 0.5s ;
+} 
+
+header > #foto {
+    padding:5px;
+}
+header img {
+    border-radius: 50%;
     
 }
