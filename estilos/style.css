@@ -66,24 +66,24 @@ header img {
     border-radius: 10px;
     background-color: var(--fundo-principal);
 }
-#container-apresentacao > main {
+.container-apresentacao > main {
     display: flex;
     flex-direction: column; 
 }
-#container-apresentacao > main > h2 {
+.container-apresentacao > main > h2 {
     text-align: center;
     color: var(--destaque);
     padding-bottom: 5px;
 }
-#container-apresentacao > main > p {
+.container-apresentacao > main > p {
     font-size: 0.9em;
     padding: 1px;
     padding: 5px;
     text-align: justify;
 }
-#container-apresentacao > main > #fotolugar img {
-    width: 430px;
-    height: 220px;
+.container-apresentacao > main > #fotolugar img {
+    width: 100%;
+    height: 100%;
     border-radius: 10px;    
     overflow: hidden;
     aspect-ratio: 16/9;
@@ -91,7 +91,7 @@ header img {
 
 /* 2° conteudo - nuestros servicios */
 
-#servicio1 {
+.servicio1 {
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -102,22 +102,23 @@ header img {
     margin-bottom: 30px;
     border-radius: 10px;
     background-color: var(--fundo-principal);
+    border-left: var(--destaque) solid 8px; 
     text-align: justify;
-    border-left: var(--destaque) solid 8px;
+    font-size: 0.9em;
 }
-#servicio1:hover {
+.servicio1:hover {
     border-left: var(--destaque-inverso) solid 17px ;
     transition: 0.5s;
 }
-#servicio1 > h3 {
+.servicio1 > h3 {
     text-align: center;
     color: var(--destaque);
 }
-#servicio1 > img {
+.servicio1 > img {
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px;
     object-fit: cover;
-    width: 400px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
 }
