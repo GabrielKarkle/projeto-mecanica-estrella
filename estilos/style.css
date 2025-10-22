@@ -6,8 +6,8 @@
     --fundo-card: #ffffff;
     --texto: #222222 ;
     --text-inverso: #ffffff;
-    --destaque: #3F48CC;
-    --destaque-inverso: #4132e8;
+    --destaque: #2732d3;
+    --destaque-inverso: #3F48CC;
 }
 
 /*configuraçoes gerais*/
@@ -31,17 +31,17 @@ header{
     color: var(--text-inverso);
     padding: 3px;
     width: 100%;
-    height: 100px;
+    height: 130px;
 }
 header > #menu {
-    display: flex;
+    position: relative;
+    top: 75%;
 }
 header > #menu > a {   
     text-decoration: none;
-    align-content: flex-end;
-    margin: 7px;
-    
-    color: white;
+    margin: 7px; 
+    padding: 5px;
+    color: #ffffff;
     border-radius: 10px;
 }
 header > #menu > a:hover {
@@ -96,6 +96,15 @@ header h1 {
 }
 
 /* 2° conteudo - nuestros servicios */
+ 
+#h1servicio {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px;
+    color: var(--destaque);
+}
+
+/* reparacion de maquinas */
 
 .servicio1 {
     display: flex;
@@ -118,9 +127,77 @@ header h1 {
 }
 .servicio1 > h3 {
     text-align: center;
+    padding-bottom: 5px;
     color: var(--destaque);
 }
 .servicio1 > img {
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/*Cambio de aceite y filtros */
+ .servicio2 {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    padding:15px 11px;
+    margin:auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: var(--fundo-principal);
+    border-left: var(--destaque) solid 8px; 
+    text-align: justify;
+    font-size: 0.9em;
+}
+.servicio2:hover {
+    border-left: var(--destaque-inverso) solid 17px ;
+    transition: 0.5s;
+}
+.servicio2 > h3 {
+    text-align: center;
+    padding-bottom: 5px;
+    color: var(--destaque);
+}
+.servicio2 > img {
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* stock de repuesto y filtros */
+.servicio3 {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    padding:15px 11px;
+    margin:auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: var(--fundo-principal);
+    border-left: var(--destaque) solid 8px; 
+    text-align: justify;
+    font-size: 0.9em;
+}
+.servicio3:hover {
+    border-left: var(--destaque-inverso) solid 17px ;
+    transition: 0.5s;
+}
+.servicio3 > h3 {
+    text-align: center;
+    padding-bottom: 5px;
+    color: var(--destaque);
+}
+.servicio3 > img {
     overflow: hidden;
     border-radius: 15px;
     padding: 10px;
