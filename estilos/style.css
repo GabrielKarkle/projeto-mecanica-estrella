@@ -32,6 +32,9 @@ header{
     padding: 3px;
     width: 100%;
     height: 130px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 header > #menu {
     position: relative;
@@ -68,9 +71,7 @@ header h1 {
     margin-top: 15px;
     border-radius: 10px;
     background-color: var(--fundo-principal);
-}
-.container-apresentacao {
-   
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
 }
 .container-apresentacao > main {
     display: flex;
@@ -181,7 +182,6 @@ header h1 {
     padding:15px 11px;
     margin:auto;
     margin-top: 15px;
-    margin-bottom: 30px;
     border-radius: 10px;
     background-color: var(--fundo-principal);
     border-left: var(--destaque) solid 8px; 
@@ -205,3 +205,63 @@ header h1 {
     width: 100%;
     height: 100%;
 }
+/*foto da frente do tractor*/
+
+#frentetractor {
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 45px 0px 45px 0px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507);
+}
+
+/*sobrenos*/
+
+#container-sobrenos {
+    background-color: var(--fundo-principal);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 15px;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.495);
+}
+#container-sobrenos > main > h2 {
+    font-size: 1.4em;
+    color: var(--destaque);
+    padding: 5px;
+}
+#container-sobrenos > main > p {
+    font-size: 0.9em;
+}
+
+#container-sobrenos > #imagens-sobren > img {
+    margin-top: 15px;
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* contactos */
+#container-contacto {
+    background-color: var(--destaque);
+    height: 100%;
+    width: 100%;
+}
+#container-contacto > h3 {
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+#container-contacto > a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+    
