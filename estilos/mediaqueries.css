@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* smartphone medios e pequenos */
+
+@media screen and (min-width: 480px) { 
+    #conteudo {
+        width: 90vw;
+    }
+    p {
+        font-size: 1em;
+    }
+    .servicios > p {
+        font-size: 1.1em;
+    }
+    .servicios > h3 {
+        font-size: 1.4em;
+    }
+    #container-sobrenos main > p {
+        font-size: 1.1em;
+    }
+
+}
+
+/* tables ou telas um pouco maiores */
+
+@media screen and (min-width: 768px) {
+    #conteudo {
+        width: 80vw;
+    }
+    #conteudo > p {
+        font-size: 3em;
+    }
+
+}
+
+/* laptop pequenos */
+
+@media screen and (min-width: 1024px) {
+    #conteudo {
+        width: 70vw;
+    }
+}
+
+/* desktops */
+
+@media screen and (min-width: 1280px) {
+    
+}

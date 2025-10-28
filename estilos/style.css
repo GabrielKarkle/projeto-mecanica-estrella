@@ -22,7 +22,11 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-
+#conteudo {
+    width: 100vw;
+    margin: auto;
+    font-size: 1em;
+}
 /*topo do site*/
 header{
     background-color: var(--destaque);
@@ -100,14 +104,14 @@ header h1 {
  
 #h1servicio {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin: 10px;
     color: var(--destaque);
 }
 
 /* reparacion de maquinas */
 
-.servicio1 {
+#servicio1 {
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -122,16 +126,19 @@ header h1 {
     text-align: justify;
     font-size: 0.9em;
 }
-.servicio1:hover {
+#servicio1:hover {
     border-left: var(--destaque-inverso) solid 17px ;
     transition: 0.5s;
 }
-.servicio1 > h3 {
+#servicio1 > h3 {
     text-align: center;
     padding-bottom: 5px;
     color: var(--destaque);
 }
-.servicio1 > img {
+#servicio1 > p {
+    margin: 5px;
+}
+#servicio1 > img {
     overflow: hidden;
     border-radius: 15px;
     padding: 10px;
@@ -140,7 +147,7 @@ header h1 {
     height: 100%;
 }
 /*Cambio de aceite y filtros */
- .servicio2 {
+ #servicio2 {
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -155,16 +162,19 @@ header h1 {
     text-align: justify;
     font-size: 0.9em;
 }
-.servicio2:hover {
+#servicio2:hover {
     border-left: var(--destaque-inverso) solid 17px ;
     transition: 0.5s;
 }
-.servicio2 > h3 {
+#servicio2 > h3 {
     text-align: center;
     padding-bottom: 5px;
     color: var(--destaque);
 }
-.servicio2 > img {
+#servicio2 > p {
+    margin: 5px;
+}
+#servicio2 > img {
     overflow: hidden;
     border-radius: 15px;
     padding: 10px;
@@ -174,7 +184,7 @@ header h1 {
 }
 
 /* stock de repuesto y filtros */
-.servicio3 {
+#servicio3 {
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -188,16 +198,19 @@ header h1 {
     text-align: justify;
     font-size: 0.9em;
 }
-.servicio3:hover {
+#servicio3:hover {
     border-left: var(--destaque-inverso) solid 17px ;
     transition: 0.5s;
 }
-.servicio3 > h3 {
+#servicio3 > h3 {
     text-align: center;
     padding-bottom: 5px;
     color: var(--destaque);
 }
-.servicio3 > img {
+#servicio3 > p {
+    margin: 5px;
+}
+#servicio3 > img {
     overflow: hidden;
     border-radius: 15px;
     padding: 10px;
@@ -236,11 +249,13 @@ header h1 {
 #container-sobrenos > main > p {
     font-size: 0.9em;
 }
-
+#container-sobrenos > #imagens-sobren  {
+    text-align: center;
+}
 #container-sobrenos > #imagens-sobren > img {
     margin-top: 15px;
-    width: 100%;
-    height: 170px;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
     overflow: hidden;
 }
