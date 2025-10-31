@@ -25,12 +25,20 @@
 
 @media screen and (min-width: 768px) {
     #conteudo {
-        width: 80vw;
+        width: 75vw;
     }
-    #conteudo > p {
-        font-size: 3em;
+    p {
+        font-size: 1.2em;
     }
-
+    .servicios > p {
+        font-size: 1.3em;
+    }
+    .servicios > h3 {
+        font-size: 1.5em;
+    }
+    #container-sobrenos main > p {
+        font-size: 1.2em;
+    }
 }
 
 /* laptop pequenos */
@@ -39,10 +47,36 @@
     #conteudo {
         width: 70vw;
     }
+
+    #imagens-sobren {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #fotosobren1, #fotosobren2 {
+        width: 250px;
+        height: 75%;
+    }
+
 }
 
 /* desktops */
 
 @media screen and (min-width: 1280px) {
+    #conteudo {
+        width: 80vw;
+    }
+    #container-servicios {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    #servicio1, #servicio2, #servicio3 {
+        border: none;
+    }
+    #fotomecanica {
+        margin: auto;
+        width: 75%;
+        height: 75%;
+    }
     
 }
